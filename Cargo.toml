@@ -1,9 +1,21 @@
 [package]
 name = "string_compressor"
+description = "A very fast hasher that optimizes for small hash sizes."
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+homepage = "https://github.com/craigfay/string_compressor"
+repository = "https://github.com/craigfay/string_compressor"
+readme = "README.md"
+keywords = ["hash", "compression", "alias", "base64", "minify"]
+categories = [
+    "compression",
+    "data-structures",
+    "development-tools::build-utils",
+    "encoding",
+    "caching",
+]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 base64 = "0.13.0"
