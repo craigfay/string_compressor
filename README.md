@@ -18,3 +18,17 @@ URL-safe, base-64 aliases for a set of strings. In simple terms, it's a very fas
 - Numerical ASCII characters: `0` through `9`
 - Dashes and underscores: `-` and `_`
 - Hashed values are un-padded to minimize size.
+
+## How can I use this in my own Rust project?
+
+Add this crate as a dependency in you're `Cargo.toml`:
+
+```toml
+[dependencies]
+
+# Install from Crates.io
+string_compressor = "*" # Using crates.io
+
+# OR install from GitHub
+string_compressor = { git = "https://github.com/craigfay/string_compressor" }
+```
