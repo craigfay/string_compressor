@@ -32,3 +32,8 @@ string_compressor = "*" # Using crates.io
 # OR install from GitHub
 string_compressor = { git = "https://github.com/craigfay/string_compressor" }
 ```
+
+## Links
+- [Documentation](https://docs.rs/string_compressor/1.0.0/string_compressor/struct.StringCompressor.html)
+- [Crate Page](https://crates.io/crates/string_compressor)
+

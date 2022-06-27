@@ -7,6 +7,7 @@ use base64;
 /// a "hasher", because it optimizes for small hash sizes, but two
 /// instances won't yield the same hashed values for a given input
 /// string unless the order of hash operations is identical.
+#[derive(Default)]
 pub struct StringCompressor {
     expansion_map: HashMap<String, String>,
     compression_map: HashMap<String, String>,
@@ -18,6 +19,11 @@ impl StringCompressor {
         self.counter += 1;
         let bytes = (self.counter - 1).to_ne_bytes();
         base64::encode_config(&bytes, base64::URL_SAFE_NO_PAD)
+    }
+
+    /// Create a new `StringCompressor` instance.
+    pub fn new() -> Self {
+        Self::default()
     }
 
     /// Create a compressed alias for a given `String`.
