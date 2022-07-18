@@ -1,7 +1,7 @@
 
 ## What does this library do?
 It exports the `StringCompressor` struct that can be used to create minimally compact, non-colliding,
-URL-safe, base-64 aliases for a set of strings. In simple terms, it's a very fast hasher that optimizes for small hash sizes.
+URL-safe, base-64 aliases for a set of strings. It's useful for building minifying tools, among other things.
 
 ## When should I use this?
 - When you need to hash strings and need your hashed values to be as small as possible.
